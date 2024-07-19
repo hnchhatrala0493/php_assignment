@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="#" method="post" class="form-container">
+        <h2>Step 1: Your details</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="First and last name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Eg. +447500000000" required>
+
+        <h2>Step 2: Delivery address</h2>
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="postcode">Post code</label>
+        <input type="text" id="postcode" name="postcode" required>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" required>
+
+        <h2>Step 3: Card details</h2>
+        <label for="cardtype">Card type</label>
+        <div class="card-type">
+            <input type="radio" id="visa" name="cardtype" value="visa" required>
+            <label for="visa">Visa</label>
+
+            <input type="radio" id="amex" name="cardtype" value="amex" required>
+            <label for="amex">AmEx</label>
+
+            <input type="radio" id="mastercard" name="cardtype" value="mastercard" required>
+            <label for="mastercard">Mastercard</label>
+        </div>
+
+        <label for="cardnumber">Card number</label>
+        <input type="text" id="cardnumber" name="cardnumber" required>
+
+        <label for="securitycode">Security code</label>
+        <input type="text" id="securitycode" name="securitycode" required>
+
+        <label for="nameoncard">Name on card</label>
+        <input type="text" id="nameoncard" name="nameoncard" placeholder="Exact name as on the card" required>
+
+        <button type="submit">BUY IT!</button>
+    </form>
+</body>
+
+</html>

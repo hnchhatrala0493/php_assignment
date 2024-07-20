@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Odd Even Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assignment/css/bootstrap.min.css">
+    <script src="../assignment/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let rowId = $('#oddeven').find('tr').length;
+            for (let i = 1; i <= rowId; i++) {
+                if (i % 2 == 0) {
+                    $('.even').find('td').css('background-color', 'rgb(137, 235, 137)');
+                } else {
+                    $('.odd').find('td').css('background-color', 'red');
+                }
+            }
+        });
+    </script>
+    <script src="../assignment/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="oddeven">
+                <tr data-row="1" class="odd">
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr data-row="2" class="even">
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr data-row="3" class="odd">
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                <tr data-row="4" class="even">
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                <tr data-row="5" class="odd">
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                <tr data-row="6" class="even">
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                <tr data-row="7" class="odd">
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                <tr data-row="8" class="even">
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                <tr data-row="9" class="odd">
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                <tr data-row="10" class="even">
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
